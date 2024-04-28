@@ -1,0 +1,50 @@
+.imagePreview {
+  width: 250px; /* A popular width for image previews */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* This will cover the box with the image, cropping it if necessary */
+  border-radius: 4px; /* Optional: rounds the corners for a nicer appearance */
+  border: 1px solid #ddd; /* Optional: adds a subtle border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow for depth */
+}
+
+.img-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.label_input{
+  
+}
+
+
+.croppedImage {
+  display: block;
+  max-width: 100%;
+  width: 100%; 
+  height: auto; 
+  margin: 20px auto; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 4px; 
+}
+
+
+.cropper-container {
+  max-width: 50%; 
+  height: auto; /* Keeps the image's aspect ratio */
+  margin: 20px; /* Adds some spacing */
+  /* Remove display: block; from .croppedImage if it exists */
+}
+
+
+.cropper-view-box {
+  box-shadow: 0 0 0 1px white;
+  border-radius: 50%;
+}
+
+
+.cropper-dashed, .cropper-point {
+  display: none;
+  flex-direction: column;
+}

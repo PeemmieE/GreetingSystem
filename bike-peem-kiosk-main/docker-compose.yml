@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  kiosk-backend:
+    build:
+      context: ./bike-kiosk-server
+      dockerfile: Dockerfile
+    image: bike-kiosk-server-image
+    container_name: bike-kiosk-server-container
+    ports:
+      - "2482:2482"
+    volumes:
+      - type: bind
+        source: ./bike-kiosk-server/labels
+        target: /app/labels
+      - type: bind
+        source: ./bike-kiosk-server/labelsOff
+        target: /app/labelsOff
+    networks:
+      - app-network
+
+  kiosk-frontend:
+    build:
+      context: ./bike-kiosk-client
+      dockerfile: Dockerfile
+    image: bike-kiosk-client-image
+    container_name: bike-kiosk-client-container
+    ports:
+      - "2481:80"
+    depends_on:
+      - kiosk-backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true

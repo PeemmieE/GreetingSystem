@@ -1,0 +1,284 @@
+@media screen and (max-width: 990px) {
+
+    /* body {
+      background-color: olive;
+    } */
+    .test {
+        width: 100%;
+    }
+
+    .conAll {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conPic {
+        /* width: 100%; */
+        color: wheat;
+    }
+
+    .tb {
+        display: inline;
+        width: 50%;
+    }
+}
+
+
+
+body {
+    background-color: #F9EFDB;
+}
+
+.sc {
+    width: 50%;
+
+}
+
+.fc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+
+}
+
+.eleCard {
+    background-color: #E5C287;
+
+    /* width: 100%; */
+    border: 1px solid grey;
+    padding: 1.5rem;
+    margin: 1rem;
+
+
+    width: auto;
+    height: auto;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tb {
+    max-width: 100%;
+    width: 40%;
+}
+
+.conAll {
+    /* background-color: #E8751A; */
+    margin-top: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    /* align-items: center; */
+    /* flex-wrap: wrap ; */
+    /* justify-content: space-around; */
+}
+
+.conPic {
+    background-color: #EBD9B4;
+    /* display: inline-flex;  */
+    flex-direction: column;
+    border: 1px outset black;
+    border-radius: 25px;
+    padding: 1rem;
+    /* max-width: 70%; */
+    /* width: 50%; */
+    /* width: 40%; */
+}
+
+.imgCard {
+    width: 200px;
+    height: 250px;
+    /* width: 500px; */
+}
+
+.btnD {
+    background-color: #9DBC98;
+    width: 100%;
+    margin-top: 0.5rem;
+    border: 1px solid grey;
+}
+
+/*  Style Copy  */
+.input-group.mb-3 label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-group.mb-3 input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+button {
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal {
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: white;
+    width: 30em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-footer button {
+    margin: 0 0.5rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+
+
+.close {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-content {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.NewCollectionCSS-img-container {
+    width: 100%;
+}
+
+.croppedImage {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+
+button[onclick="handleUpload"] {
+    background-color: #17a2b8;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button[onclick="handleUpload"]:hover {
+    background-color: #138496;
+}
+
+
+button {
+    user-select: none;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.size {
+    border: #000 solid 1px;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: rgba(241, 242, 234, 0.893);
+    width: 75%;
+}
+
+.size1 {
+    border: #000 solid 1px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    border-radius: 25px;
+    background-color: rgba(241, 242, 234, 0.893);
+    max-width: 100%;
+    width: 100%;
+}
+
+.btn {
+    margin-right: 0.5rem;
+}
+
+.jm {
+    margin-bottom: 0.5rem;
+}
+
+.inputName {
+    width: 100%;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}

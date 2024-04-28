@@ -1,0 +1,81 @@
+/* Main alignment container */
+.ac {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;  */
+    gap: 1rem; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1rem; 
+  
+  }
+  
+  /* Table container */
+  .iac {
+    display: flex;
+    flex: 1; 
+    align-items: start;
+    width: 100%;
+    
+    justify-content: space-around;
+  }
+.fChart{
+  /* margin-left: 1000px; */
+  width: 40%;
+}
+
+.tbp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sChart{
+  /* border: 1px black solid; */
+  width: 100%;
+  /* display: none; */
+}
+
+  
+  /* Image styles within table */
+  img {
+    width: auto; /* Auto width to maintain aspect ratio */
+    height: 75px; /* Fixed height for uniformity */
+    border-radius: 0.5rem; /* Rounded corners for the images */
+  }
+  
+  /* Pagination styling */
+  .pagination {
+    /* display: flex; */
+    justify-content: center; 
+    padding: 1rem 0; /* Padding above and below the pagination */
+  }
+  
+  .pagination .page-item .page-link {
+    /* color: #007bff; */
+    margin: 0 0.25rem; /* Spacing between pagination items */
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #007bff; /* Bootstrap primary background color for active state */
+    border-color: #007bff; /* Bootstrap primary border color for active state */
+  }
+  
+  /* Chart and additional information area */
+  h3 {
+    color: #333; /* Dark color for headings for better contrast */
+    margin-bottom: 1rem; /* Spacing below the heading */
+  }
+  
+  /* Additional styles for responsiveness */
+  @media (max-width: 768px) {
+    .ac {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .iac{
+      flex-direction: column;
+    }
+    .fChart{
+      width: 100%;
+    }
+  }
+  

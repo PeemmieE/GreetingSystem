@@ -1,0 +1,93 @@
+/* Styles.css or your stylesheet file */
+
+.container {
+    max-width: 400px; /* Set a max width for the container */
+    margin: 50px auto; /* Center the container with automatic margins */
+    padding: 20px; /* Add some padding inside the container */
+    background: #f9f9f9; /* A light background color for the container */
+    border-radius: 8px; /* Round the corners of the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* A subtle shadow to lift the container off the page */
+  }
+  
+  .container h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for the text */
+    margin-bottom: 30px; /* Add some space below the heading */
+  }
+  
+  .container label {
+    display: block; /* Make the label a block to take up full width */
+    margin-bottom: 10px; /* Add some space below the label */
+    color: #666; /* Medium color for the label text */
+  }
+  
+  .container input[type="text"],
+  .container input[type="password"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Add some padding inside the inputs */
+    margin-bottom: 20px; /* Add some space below the inputs */
+    border: 1px solid #ddd; /* A subtle border around the inputs */
+    border-radius: 4px; /* Slightly round the corners of the inputs */
+  }
+  
+  .container button {
+    width: 100%; /* Make the button full width */
+    padding: 10px 0; /* Add some padding above and below the text */
+    border: none; /* Remove the default border */
+    background: #5cb85c; /* A green background for the button */
+    color: white; /* White text for the button */
+    border-radius: 4px; /* Slightly round the corners of the button */
+    cursor: pointer; /* Change the cursor to indicate the button is clickable */
+    font-size: 16px; /* Increase the font size in the button */
+  }
+  
+  .container button:hover {
+    background: #4cae4c; /* Darken the button color on hover for feedback */
+  }
+  
+  /* Login.module.css */
+
+.loginContainer {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submitButton:hover {
+    background: #4cae4c;
+  }
+  

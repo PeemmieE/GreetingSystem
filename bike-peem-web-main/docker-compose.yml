@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+
+  web-backend:
+    build: ./peem-web-server
+    image: peem-web-server-image
+    container_name: peem-web-server-container
+    ports:
+      - "2484:2484"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "mysql://user:password@db/bike_peem_greeting"
+    volumes:
+      - ./peem-web-server/knownImgStore:/app/knownImgStore
+      - ./peem-web-server/unknownImgStore:/app/unknownImgStore
+      - ./peem-web-server/envImgStore:/app/envImgStore
+      - ./peem-web-server/labels:/app/labels
+      - ./peem-web-server/statusoff:/app/statusoff
+    networks:
+      - app-network
+
+  web-frontend:
+    build: ./peem-web-client
+    image: peem-web-client-image
+    container_name: peem-web-client-container
+    ports:
+      - "2483:80"
+    depends_on:
+      - web-backend
+    networks:
+      - app-network
+
+  db:
+    container_name: bike-peem-db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: bike_peem_greeting
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "2485:3306"
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "2486:80"
+    restart: always
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true

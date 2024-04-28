@@ -1,0 +1,55 @@
+/* Styles for the TestSearchPic Component */
+.testSearchPicContainer {
+  font-family: 'Arial', sans-serif;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  justify-content: center; 
+  align-items: center; /* Center children vertically */
+  gap: 20px; /* Adds space between the canvas and the table */
+}
+  
+  .testSearchPicTitle {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .testSearchPicLoading {
+    color: #666;
+  }
+  
+  .testSearchPicInput {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .testSearchPicCanvas {
+    display: block;
+    margin: 0; /* Reset any auto margins */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* Set a specific width or max-width if needed */
+  }
+  
+  .tableContainer {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    /* Set max-width or width as necessary to constrain table width */
+  }
+
+  .contentContainer {
+    margin-top: 2rem;
+    display: flex;
+    /* gap: 100px; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }

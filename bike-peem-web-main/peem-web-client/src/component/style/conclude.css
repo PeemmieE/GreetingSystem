@@ -1,0 +1,221 @@
+@media print {
+     @page {
+        size: landscape;
+    }
+
+    body {
+        width: 100%;
+    }
+/*
+    .landscape {
+        width: 100%;
+        height: auto;
+    }
+
+    .print-chart-container {
+        width: 100%;
+        /* or any other size */
+        /* height: auto;
+        margin: auto; 
+    }  */
+} 
+
+
+
+.tt {
+    display: flex;
+    flex-direction: column;
+}
+
+.test {
+    width: 20%;
+}
+
+.allcon {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.sconn {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.conTB {
+    width: 43%;
+    border: 1px solid black;
+}
+
+.tbh {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.modalTest {
+    width: 35%;
+}
+
+.modalBody {
+    width: 100%;
+}
+
+.stb {
+    height: 5%;
+    width: auto;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+.chh {
+    padding: 1rem;
+    width: 43%;
+    border: 1px solid black;
+
+}
+
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+}
+
+.tablef {
+    width: 100%;
+    /* max-width: 600px;  */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination {
+    margin-top: 0;
+}
+
+
+.pagination .page-link {
+    margin: 0 4px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+td img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+
+.fconn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.tt,
+.ifconn,
+.allcon,
+.sconn,
+.conTB,
+.tbh,
+.stb,
+.chh {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.ifconn,
+.chh {
+    background-color: #EBD9B4;
+}
+
+
+
+.ifconn {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECF0F1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+    font-size: 1.2em;
+}
+
+.ifconn .faUser {
+    font-size: 2rem;
+    color: #7F8C8D;
+}
+
+.ifconn:hover {
+    background-color: #D5D8DC;
+    cursor: pointer;
+}
+
+.ifconn-text {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 1rem;
+    font-weight: bold;
+    color: #34495E;
+}
+
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: #2ECC71;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .tbh,
+    .conTB,
+    .ch {
+        /* width: 100%;  */
+    }
+
+    .fconn,
+    .scon {
+        flex-direction: column;
+    }
+}

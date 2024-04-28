@@ -1,0 +1,143 @@
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: 2px solid #dee2e6;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .historyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+  }
+  
+  .historySection {
+    margin-left: 10px;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #252525;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 40rem;
+    /* margin-bottom: 5rem; */
+  }
+  
+  .historyItem {
+    border-bottom: 1px solid #252525;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .historyTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .expressionText {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  /* Additional styles for the second flex item, if needed */
+  .flexItem2 {
+    /* border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    height: 40rem;  */
+
+    margin-right: 10px;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #252525;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 40rem;
+  }
+  
+  /* New */
+
+  /* Assuming this is in your Search.module.css */
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light gray background for the container */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    margin-top: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .history-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; /* Adds space between the flex items */
+  }
+  
+  .history-panel,
+  .flex-item {
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 40px; /* Fixed height for scrollable area */
+    overflow-y: auto; /* Allows scrolling */
+    background-color: #ffffff; /* White background for the content areas */
+  }
+  
+  .history-panel {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .flex-item {
+    /* Add any additional styling for the second flex item here */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-entry {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef; /* Subtle separator for entries */
+  }
+  
+  .history-entry h4 {
+    color: #495057; /* Dark gray color for titles */
+    margin-bottom: 0.5rem;
+  }
+  
+  .history-entry p {
+    color: #6c757d; /* Medium gray color for content */
+  }
+  
+  .chart-container {
+    /* width: 100px; */
+    margin-right: 30px;
+    height: 500px; 
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

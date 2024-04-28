@@ -1,0 +1,183 @@
+/* Ensures consistent styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #808080; */
+}
+
+/* Style for NavBar omitted for brevity */
+
+/* Style for the input group */
+.input-group.mb-3 label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-group.mb-3 input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Styling buttons with a more modern look */
+button {
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Upload Image button */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styling */
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure modal is above other content */
+}
+
+.modal {
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: white;
+    width: 30em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+/* Buttons in the modal footer */
+.modal-footer button {
+    margin: 0 0.5rem; /* Adds space between buttons */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* Submit and Cancel buttons */
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+
+/* Close button styling */
+.close {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Style for modal header and content */
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Adjusts alignment of header items */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef; /* Adds a separator */
+}
+
+.modal-content {
+    margin-bottom: 2rem;
+    padding: 1rem; /* Adds padding around content for whitespace */
+}
+
+/* Image container */
+.NewCollectionCSS-img-container {
+    width: 100%;
+    text-align: center; /* Centers the cropper container */
+}
+
+/* Cropped image display styles */
+.croppedImage {
+    display: block;
+    width: auto; /* Adjust as necessary for your layout */
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Upload button */
+button[onclick="handleUpload"] {
+    background-color: #17a2b8;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button[onclick="handleUpload"]:hover {
+    background-color: #138496;
+}
+
+/* Ensures that the button text is not selectable for a better user experience */
+button {
+    user-select: none;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.size{
+  border: #000 solid 1px;
+  align-items: center;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  border-radius: 25px;
+  background-color: rgba(241, 242, 234, 0.893);
+}
+.btn{
+  margin-right: 0.5rem;
+}
